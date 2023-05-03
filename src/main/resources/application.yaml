@@ -1,0 +1,22 @@
+spring:
+  jackson:
+    deserialization:
+      fail-on-unknown-properties: false
+    serialization:
+      fail-on-empty-beans: false
+  datasource:
+    insurance:
+      url: jdbc:postgresql://localhost:5432/insurance
+      jdbc-url: jdbc:postgresql://localhost:5432/insurance
+      username: jim
+      password: Wiomm$001
+      driver-class-name: org.postgresql.Driver
+  jpa:
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+    generate-ddl: true
+    properties:
+      hibernate:
+        ddl-auto: update
+        dialect: org.hibernate.dialect.PostgreSQLDialect
